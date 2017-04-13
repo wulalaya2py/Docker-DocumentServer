@@ -1,7 +1,7 @@
 FROM ubuntu:14.04
 MAINTAINER Ascensio System SIA <support@onlyoffice.com>
 
-ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8 DEBIAN_FRONTEND=noninteractive
+ENV LANG=zh_CN.GB2312 LANGUAGE=zh_CN:zh LC_ALL=zh_CN.GB2312 DEBIAN_FRONTEND=noninteractive
 
 RUN echo "#!/bin/sh\nexit 0" > /usr/sbin/policy-rc.d && \
     apt-get -y update && \
